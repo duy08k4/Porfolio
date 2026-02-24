@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@plugin 'tailwind-scrollbar' {
+  nocompatible: true;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .scrollbar-custom::-webkit-scrollbar {
+    height: 2px;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    padding: 1px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 9999px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  /* The scroll bar of page */
+  .page-custom-scrollbar {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #1463c7 transparent;
+    /* Firefox */
+  }
+
+  .page-custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .page-custom-scrollbar::-webkit-scrollbar-track {
+    background: #1463c7;
+    /* the track */
+  }
+
+  .page-custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* thumb color */
+    border-radius: 10px;
+    border: 2px solid #1463c7;
+    /* this makes a "hollow" thumb */
+  }
+}
+
+@theme {
+  /* Size */
+  --text-csSmall: 14px;
+
+  /* Color */
+  --color-primary-dark: #363636;
+  --color-primary-blue: #1463c7;
+  --color-secondary-dark: #222;
+  --color-text-white-darker: #808080;
+
+  /* Padding */
+  --spacing-component-padding: 40px 40px;
+  --spacing-component-padding-mobile: 40px 30px;
+  --spacing-component-content-padding: 0 20px
+}

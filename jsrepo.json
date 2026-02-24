@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/jsrepo@2.4.3/schemas/project-config.json",
+  "repos": ["https://reactbits.dev/ts/tailwind"],
+  "includeTests": false,
+  "includeDocs": false,
+  "watermark": true,
+  "formatter": "prettier",
+  "configFiles": {},
+  "paths": {
+    "*": "./src/gsap/blocks",
+    "Animations": "./src/gsap/Animations",
+    "Backgrounds": "./src/gsap/Backgrounds",
+    "Components": "./src/gsap/Componentss",
+    "TextAnimations": "./src/gsap/Animations"
+  }
+}

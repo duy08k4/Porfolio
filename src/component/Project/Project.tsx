@@ -21,7 +21,7 @@ const Project: React.FC = () => {
             shortDes: "This web application provides free access to marine biology data, allowing users to explore marine species through interactive map layers.",
             techList: ["Ionic React (TypeScript)", "NestJS", "Tauri", "Supabase", "Vercel", "Render", "Cloudinary"],
             gitSource: "",
-            demo: "https://alert-me-iota.vercel.app/",
+            demo: "https://ocean-vn-app-git-staging-sinhvatbienvietnams-projects.vercel.app/",
             subContent: ""
         },
         {
